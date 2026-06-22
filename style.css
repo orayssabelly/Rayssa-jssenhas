@@ -1,77 +1,72 @@
 :root {
-    --fundo-principal: #0F172A;
-    --fundo-caixa: #1E293B;
-    --fundo-texto: #334155;
+    --fundo-principal: #1E1E24;
+    --fundo-card: #2A2A32;
+    --fundo-texto: #3F3F4E;
     --branco: #FFFFFF;
-    --borda: #475569;
-    --vermelho-fraca: #EF4444;
+    --borda: #4E4E61;
 }
 
 body {
     background-color: var(--fundo-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--branco);
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
 }
 
-.container {
-    background-color: var(--fundo-caixa);
-    padding: 40px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 500px;
-}
-
-.cabecalho {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.titulo {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.descricao {
-    color: #94A3B8;
-}
-
-.caixa-senha {
-    background-color: var(--fundo-texto);
-    border: 2px solid var(--borda);
-    padding: 20px;
+.conteudo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    font-size: 24px;
-    margin-bottom: 30px;
 }
 
-.icone-cadeado {
-    width: 24px;
-    height: 24px;
+.gerador {
+    background-color: var(--fundo-card);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-.subtitulo {
+.gerador__cabecalho {
+    margin-bottom: 24px;
+}
+
+.gerador__icone {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+}
+
+.gerador__titulo {
+    font-size: 32px;
+    margin: 0;
+}
+
+.campo-senha__input {
+    width: 100%;
+    padding: 16px;
     font-size: 20px;
-    margin-bottom: 20px;
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+.configuracoes__titulo {
+    font-size: 18px;
+    margin-bottom: 16px;
 }
 
 .parametro-senha {
-    margin-bottom: 25px;
-}
-
-.parametro-senha__label {
-    margin-bottom: 10px;
-}
-
-.parametro-senha__controle {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -82,6 +77,11 @@ body {
     padding: 24px;
     font-size: 24px;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.parametro-senha__botao:hover {
+    background-color: var(--borda);
 }
 
 .parametro-senha__texto {
@@ -90,39 +90,6 @@ body {
     border-bottom: 2px solid var(--borda);
     margin: 0;
     font-size: 24px;
-}
-
-.opcoes-e-forca {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.checkboxes {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.opcao {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.status-fraca {
-    color: var(--vermelho-fraca);
-    font-weight: bold;
-}
-
-.barra-forca {
-    height: 8px;
-    width: 100px;
-    border-radius: 4px;
-    margin-top: 5px;
-}
-
-.barra-fraca {
-    background-color: var(--vermelho-fraca);
+    background-color: var(--fundo-texto);
+    min-width: 60px;
 }
