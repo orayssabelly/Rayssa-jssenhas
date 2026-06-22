@@ -1,46 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Senhas</title>
+    <title>Gerador de Senhas Seguras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container">
-        <header class="cabecalho">
-            <h1 class="titulo">Gerador de senhas</h1>
-            <p class="descricao">Gere instantaneamente uma senha aleatória e segura</p>
-        </header>
-
-        <section class="caixa-senha">
-            <span class="senha-gerada">zcBLsNGXabce</span>
-            <img src="unlock.svg" alt="Ícone de cadeado aberto" class="icone-cadeado">
-        </section>
-
-        <section class="personalizar">
-            <h2 class="subtitulo">Personalize sua senha</h2>
-            
-            <div class="parametro-senha">
-                <p class="parametro-senha__label">Número de caracteres</p>
-                <div class="parametro-senha__controle">
-                    <button class="parametro-senha__botao">-</button>
-                    <p class="parametro-senha__texto">12</p>
-                    <button class="parametro-senha__botao">+</button>
-                </div>
+    <main class="conteudo">
+        <section class="gerador">
+            <div class="gerador__cabecalho">
+                <img src="unlock.svg" alt="Ícone de cadeado aberto" class="gerador__icone">
+                <h1 class="gerador__titulo">Gerador de Senhas</h1>
             </div>
 
-            <div class="opcoes-e-forca">
-                <div class="checkboxes">
-                    <label class="opcao"><input type="checkbox" checked> Letras maiúsculas</label>
-                    <label class="opcao"><input type="checkbox" checked> Letras minúsculas</label>
-                    <label class="opcao"><input type="checkbox"> Números</label>
-                    <label class="opcao"><input type="checkbox"> Símbolos</label>
-                </div>
+            <div class="campo-senha">
+                <input type="text" id="senha-gerada" class="campo-senha__input" readonly value="S3nH4_StR0nG!">
+            </div>
 
-                <div class="forca-senha">
-                    <p>Força da senha: <span class="status-fraca">Fraca</span></p>
-                    <div class="barra-forca barra-fraca"></div>
+            <div class="configuracoes">
+                <p class="configuracoes__titulo">Número de caracteres</p>
+                <div class="parametro-senha">
+                    <button class="parametro-senha__botao" id="botao-diminuir">-</button>
+                    <p class="parametro-senha__texto" id="numero-caracteres">12</p>
+                    <button class="parametro-senha__botao" id="botao-aumentar">+</button>
                 </div>
             </div>
         </section>
