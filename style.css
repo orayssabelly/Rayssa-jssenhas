@@ -1,0 +1,128 @@
+:root {
+    --fundo-principal: #0F172A;
+    --fundo-caixa: #1E293B;
+    --fundo-texto: #334155;
+    --branco: #FFFFFF;
+    --borda: #475569;
+    --vermelho-fraca: #EF4444;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    color: var(--branco);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--fundo-caixa);
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    color: #94A3B8;
+}
+
+.caixa-senha {
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--borda);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.icone-cadeado {
+    width: 24px;
+    height: 24px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.parametro-senha {
+    margin-bottom: 25px;
+}
+
+.parametro-senha__label {
+    margin-bottom: 10px;
+}
+
+.parametro-senha__controle {
+    display: flex;
+    align-items: center;
+}
+
+.parametro-senha__botao {
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px solid var(--borda);
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.parametro-senha__texto {
+    padding: 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
+    font-size: 24px;
+}
+
+.opcoes-e-forca {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.status-fraca {
+    color: var(--vermelho-fraca);
+    font-weight: bold;
+}
+
+.barra-forca {
+    height: 8px;
+    width: 100px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.barra-fraca {
+    background-color: var(--vermelho-fraca);
+}
