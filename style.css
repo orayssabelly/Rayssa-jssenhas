@@ -1,15 +1,14 @@
 :root {
     --fundo-principal: #1E1E24;
-    --fundo-card: #2A2A32;
-    --fundo-texto: #3F3F4E;
+    --fundo-texto: #2A2A32;
     --branco: #FFFFFF;
-    --borda: #4E4E61;
+    --borda: #4A4A5A;
 }
 
 body {
     background-color: var(--fundo-principal);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--branco);
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,57 +16,19 @@ body {
     margin: 0;
 }
 
-.conteudo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gerador {
-    background-color: var(--fundo-card);
-    padding: 40px;
-    border-radius: 12px;
+.container {
     text-align: center;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-.gerador__cabecalho {
-    margin-bottom: 24px;
+.cabecalho__imagem {
+    width: 50px;
+    height: auto;
 }
 
-.gerador__icone {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 16px;
-}
-
-.gerador__titulo {
-    font-size: 32px;
-    margin: 0;
-}
-
-.campo-senha__input {
-    width: 100%;
-    padding: 16px;
-    font-size: 20px;
-    background-color: var(--fundo-texto);
-    color: var(--branco);
-    border: 1px solid var(--borda);
-    border-radius: 8px;
-    text-align: center;
-    box-sizing: border-box;
-    margin-bottom: 32px;
-}
-
-.configuracoes__titulo {
-    font-size: 18px;
-    margin-bottom: 16px;
-}
-
-.parametro-senha {
+.parametro-senha__controle {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .parametro-senha__botao {
@@ -77,11 +38,6 @@ body {
     padding: 24px;
     font-size: 24px;
     cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.parametro-senha__botao:hover {
-    background-color: var(--borda);
 }
 
 .parametro-senha__texto {
@@ -90,6 +46,4 @@ body {
     border-bottom: 2px solid var(--borda);
     margin: 0;
     font-size: 24px;
-    background-color: var(--fundo-texto);
-    min-width: 60px;
 }
