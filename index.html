@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="conteudo">
-        <section class="gerador">
-            <div class="gerador__cabecalho">
-                <img src="unlock.svg" alt="Ícone de cadeado aberto" class="gerador__icone">
-                <h1 class="gerador__titulo">Gerador de Senhas</h1>
+    <main class="container">
+        <section class="conteudo">
+            <div class="cabecalho">
+                <img src="unlock.svg" alt="Ícone de cadeado aberto" class="cabecalho__imagem">
+                <h1 class="cabecalho__titulo">Gerador de Senhas</h1>
             </div>
 
             <div class="campo-senha">
-                <input type="text" id="senha-gerada" class="campo-senha__input" readonly value="S3nH4_StR0nG!">
+                <input type="text" id="senha-gerada" class="campo-senha__input" readonly value="S3NH4!_">
             </div>
 
-            <div class="configuracoes">
-                <p class="configuracoes__titulo">Número de caracteres</p>
+            <div class="parametros">
+                <h2 class="parametros__titulo">Força da senha</h2>
+                
                 <div class="parametro-senha">
-                    <button class="parametro-senha__botao" id="botao-diminuir">-</button>
-                    <p class="parametro-senha__texto" id="numero-caracteres">12</p>
-                    <button class="parametro-senha__botao" id="botao-aumentar">+</button>
+                    <h3 class="parametro-senha__titulo">Número de caracteres</h3>
+                    <div class="parametro-senha__controle">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
                 </div>
             </div>
         </section>
